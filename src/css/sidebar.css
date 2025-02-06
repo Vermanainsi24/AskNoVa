@@ -1,0 +1,116 @@
+.slidebar{
+    height:100vh;
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:space-between;
+    background-color:#f0f4f9;
+    padding:30px;
+    top:0;
+    left:0;
+    bottom:0;
+    margin:0;
+    position:sticky;
+    
+    
+}
+.slidebar img{
+    width:25px;
+} 
+.slidebar .menu{
+    display:block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.slidebar .new-chat{
+    align-items: center;
+    gap:10px;
+    display:inline-flex;
+    padding: 10px 15px;
+    flex-direction: row;
+    background-color: #e6eaf1;  
+    border-radius:50px;
+    font-size: 14px;
+    color:grey;
+    cursor: pointer;
+   
+}
+.recent{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    animation: fadein 1.5s;
+}
+.recent {
+    max-height: 250px; /* Adjust height as needed */
+    overflow-y: auto;  /* Enables vertical scrolling */
+    padding-right: 10px; /* Prevents content from hiding behind scrollbar */
+}
+
+/* Custom Scrollbar Styling */
+.recent::-webkit-scrollbar {
+    width: 8px; /* Scrollbar width */
+}
+
+.recent::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track background */
+    border-radius: 5px;
+}
+
+.recent::-webkit-scrollbar-thumb {
+    background: #888; /* Scrollbar color */
+    border-radius: 5px;
+}
+
+.recent::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color on hover */
+}
+
+.slidebar .recent-title{
+    margin-top: 30px;
+    margin-bottom: 20px;    
+}
+.slidebar .recent-entry{
+    display:inline-flex;
+    gap:10px;
+    padding: 10px 15px;
+    flex-direction: row;
+    background-color: #e6eaf1;  
+    border-radius:50px;
+    font-size: 14px;
+    color: #282828;;
+    cursor: pointer;
+    animation: fadein 1.5s;
+}
+.slidebar .recent-entry :hover{
+    background-color:  #e6eaf19f; ;
+}
+
+.slidebar .bottom{
+    display: flex;
+    flex-direction: column;
+
+}
+.slidebar .bottom-item{
+    padding-right: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    margin-top: 6px;
+    
+}
+
+@keyframes fadein{
+    0%{
+      opacity:0;
+    }
+    100%{
+      opacity:1;
+    }
+  }
+
+@media (max-width:600px){
+    .slidebar{
+        display: hidden;
+    }
+}

@@ -1,0 +1,22 @@
+/* Style for Code Blocks */
+.code{
+    background-color:black;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #f4f4f4;
+  }
+  
+  /* Style for Inline Code */
+  .inline-code {
+    background-color: #f4f4f4;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+  }
+  
